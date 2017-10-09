@@ -16,16 +16,81 @@ while True:
 		
 	from random import *
 
+#Beating number
+	bnumber = randint(1,6)
+	
 	number = randint(1,6)
 	
 
+	if (bnumber == 1):
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [             ]")
+		print (" [      O      ]")
+		print (" [             ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+
+		
+	if (bnumber == 2):
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [             ]")
+		print (" [   O     O   ]")
+		print (" [             ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+		
+	if (bnumber == 3):
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [   O     O   ]")
+		print (" [             ]")
+		print (" [      O      ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+		
+	if (bnumber == 4):
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [   O     O   ]")
+		print (" [             ]")
+		print (" [   O     O   ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+		
+	if (bnumber == 5):
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [   O     O   ]")
+		print (" [      O      ]")
+		print (" [   O     O   ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+			
+	if (bnumber == 6):		
+		print ("Player 1 Rolls: ")
+		print (" [-------------]")
+		print (" [   O     O   ]")
+		print (" [   O     O   ]")
+		print (" [   O     O   ]")
+		print (" [-------------]")
+		print ("Press Enter to Roll")
+		play = input ()
+		
+	
 	if (number == 1):
 		print (" [-------------]")
 		print (" [             ]")
 		print (" [      O      ]")
 		print (" [             ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
+		print ("Press Enter to Roll")
 
 		
 	if (number == 2):
@@ -34,7 +99,7 @@ while True:
 		print (" [   O     O   ]")
 		print (" [             ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
+		
 	
 		
 	if (number == 3):
@@ -43,7 +108,7 @@ while True:
 		print (" [             ]")
 		print (" [      O      ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
+	
 
 		
 	if (number == 4):
@@ -52,7 +117,7 @@ while True:
 		print (" [             ]")
 		print (" [   O     O   ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
+	
 
 		
 	if (number == 5):
@@ -61,7 +126,7 @@ while True:
 		print (" [      O      ]")
 		print (" [   O     O   ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
+	
 
 		
 	if (number == 6):		
@@ -70,9 +135,19 @@ while True:
 		print (" [   O     O   ]")
 		print (" [   O     O   ]")
 		print (" [-------------]")
-		print ("Type 'q' to quit")
-		
 	
 
+	if (bnumber < number):
+		print ("Congratulation! You won!")
+		print ("Type 'q' to quit")
 	
+		
+	elif (int(bnumber) == int(number)):
+		print ("Draw! Roll Again!")
+		print ("Type 'q' to quit")
+		
+	else:
+		print ("Too bad, better luck next time!")
+		print ("Type 'q' to quit")
+		
 
