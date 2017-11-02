@@ -1,0 +1,38 @@
+CREATE table employee (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT,
+    last_name TEXT,
+    salary INTEGER);
+    
+SELECT * FROM employee;
+
+INSERT INTO employee (first_name, last_name, salary) 
+    VALUES ("Edward", "Han", 45000);
+INSERT INTO employee (first_name, last_name, salary)
+    VALUES ("Lorena", "Gomaz", 66000);
+INSERT INTO employee (first_name, last_name, salary)
+    VALUES ("Alfred", "Ochoa", 100000);
+INSERT INTO employee (first_name, last_name, salary)
+    VALUES ("DS", "Kim", 275000);
+INSERT INTO employee (first_name, last_name, salary)
+    VALUES ("Ross", "Gatta", 300000);
+
+UPDATE employee SET salary = 50000 WHERE id = 1;
+
+ALTER TABLE employee ADD status TEXT DEFAULT "Active";
+SELECT * FROM employee;
+
+INSERT INTO employee (first_name, last_name, salary)
+    VALUES ("Hong", "Manho", 36000);
+
+UPDATE employee SET status = "Terminated" WHERE first_name = "Hong";
+SELECT*FROM employee;
+
+UPDATE employee SET status = "Inactive" WHERE id = 2;
+SELECT * FROM employee;
+
+ALTER TABLE employee ADD reason TEXT DEFAULT " ";
+UPDATE employee SET reason = "Better Job Opportunity" WHERE id=6;
+UPDATE employee SET reason = "Maternity Leave" WHERE first_name = "Lorena";
+
+SELECT * FROM employee;
